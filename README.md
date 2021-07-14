@@ -1,5 +1,6 @@
-# 🔨 freecad2python 🐍
-An interconverter between FreeCAD files and Python scripts that generate them, for versioning open hardware.
+# 🔨 freecad-python 🐍
+A collection of tools for interconverting between and working with FreeCAD files and Python scripts that generate them.
+For versioning open hardware as part of [Open Source Ecology](https://opensourceecology.org)
 
 ## How to Use
 
