@@ -2,6 +2,15 @@
 A collection of tools for interconverting between and working with FreeCAD files and Python scripts that generate them.
 For versioning open hardware as part of [Open Source Ecology](https://opensourceecology.org)
 
+## CoderJeff's Custom Workbench
+
+CoderJeff has created a great workbench for generating wall modules for the Seed Eco Home v2 in FreeCAD,
+from clicking buttons. This would vastly simplify the process of creating wall modules, and let us
+version open hardware design changes as software ("house design as code").
+
+* [Video of create walls manually](https://www.loom.com/share/2af07a8d383f4f1d9b5afc9d381d9fce)
+* [Video of using workbench](https://www.loom.com/share/b3630c5457b24fae9c27e5787b8b6b96)
+
 ## How to Use
 
 ```
