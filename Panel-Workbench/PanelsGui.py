@@ -85,7 +85,7 @@ class _Make_Wall_68_Cmd:
         MakeBox(28, 3.5, 1.5, 0, 0, 94.125, "Top_Plate")
         MakeBox(1.5, 3.5, 92.625, 0, 0, 1.5, "Left_Stud")
         MakeBox(1.5, 3.5, 92.625, 15.25, 0, 1.5, "Middle_Stud")
-        MakeBox(3.5, 1.5, 92.625, 23, 3.5, 1.5, "Corner_Stud")
+        MakeBox(3.5, 1.5, 92.625, 23, 2, 1.5, "Corner_Stud")
         MakeBox(1.5, 3.5, 92.625, 26.5, 0, 1.5, "Right_Stud")
         MakeBox(13.75, 1.75, 1.5, 1.5, 0, 10, "Bottom_Spacer_1")
         MakeBox(9.75, 1.75, 1.5, 16.75, 0, 10, "Botom_Spacer_2")
