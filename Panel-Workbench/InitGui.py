@@ -39,6 +39,7 @@ class Panels_Workbench (Workbench):
         # list of commands, (they are in the imported PanelsGui):
         cmdlist = [ "Make_8ft_Exterior",
                     "Make_8ft_Interior",
+                    "Make_Wall_68",
                     "Make_9ft_Exterior"]
         self.appendToolbar("Panels", cmdlist)
         self.appendMenu("SH2 Panels", cmdlist)

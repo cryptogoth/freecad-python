@@ -76,6 +76,34 @@ class _Make8ftPanelCmd:
         # The command will be active if there is an active document
         return not FreeCAD.ActiveDocument is None
 
+
+class _Make_Wall_68_Cmd:
+
+    def Activated(self):
+        # what is done when the command is clicked
+        MakeBox(28, 3.5, 1.5, 0, 0, 0, "Bottom_Plate")
+        MakeBox(28, 3.5, 1.5, 0, 0, 94.125, "Top_Plate")
+        MakeBox(1.5, 3.5, 92.625, 0, 0, 1.5, "Left_Stud")
+        MakeBox(1.5, 3.5, 92.625, 15.25, 0, 1.5, "Middle_Stud")
+        MakeBox(3.5, 1.5, 92.625, 23, 3.5, 1.5, "Corner_Stud")
+        MakeBox(1.5, 3.5, 92.625, 26.5, 0, 1.5, "Right_Stud")
+        MakeBox(13.75, 1.75, 1.5, 1.5, 0, 10, "Bottom_Spacer_1")
+        MakeBox(9.75, 1.75, 1.5, 16.75, 0, 10, "Botom_Spacer_2")
+        FreeCADGui.activeDocument().activeView().viewAxonometric()
+        FreeCADGui.SendMsgToActiveView("ViewFit")
+
+
+    def GetResources(self):
+        # icon and command information
+        return {
+            'Pixmap': __dir__ + '/icons/wall68_cmd.svg',
+            'MenuText': '8ft Interior Panel',
+            'ToolTip': 'Create a new Wall 68 Panel'}
+
+    def IsActive(self):
+        # The command will be active if there is an active document
+        return not FreeCAD.ActiveDocument is None
+
 class _Make8ftInteriorCmd:
 
     def Activated(self):
@@ -139,3 +167,4 @@ class _Make9ftPanelCmd:
 FreeCADGui.addCommand('Make_9ft_Exterior', _Make9ftPanelCmd())
 FreeCADGui.addCommand('Make_8ft_Exterior', _Make8ftPanelCmd())
 FreeCADGui.addCommand('Make_8ft_Interior', _Make8ftInteriorCmd())
+FreeCADGui.addCommand('Make_Wall_68', _Make_Wall_68_Cmd())
